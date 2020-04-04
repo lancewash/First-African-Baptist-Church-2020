@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <title>FABC</title>
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="plugins/slick/slick.css">
+    <!-- themefy-icon -->
+    <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+    <!-- animation css -->
+    <link rel="stylesheet" href="plugins/animate/animate.css">
+    <!-- aos -->
+    <link rel="stylesheet" href="plugins/aos/aos.css">
+    <!-- venobox popup -->
+    <link rel="stylesheet" href="plugins/venobox/venobox.css">
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/fabc-styles.css" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        i.text-primary.ti-large {
+            font-size: 5em;
+            display: block;
+            margin-bottom: 20px;
+        }
+        i.text-primary.ti-medium {
+            font-size: 3.75em;
+            display: block;
+            margin-bottom: 20px;
+        }
+        i.text-primary.ti-large.ti-inverted:before {
+            color: rgba(255,255,255,.85);
+        }
+        i.text-primary.ti-large + h3 + p {
+            font-size: 1.25rem;
+            line-height: 1.5;
+        }
+        .inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h5,
+        .inverted .h1,.inverted .h2,.inverted .h3,.inverted .h4,.inverted .h5 {
+            color: rgba(255,255,255,1);
+        }
+        .inverted .highlight,
+        .inverted a {
+            color: #FEA813;
+        }
+        .inverted a:hover {
+            text-decoration: underline;
+        }
+        .highlight.large {
+            font-size: 1.75rem;
+        }
+        .inverted p {
+            color: rgba(255,255,255,.85);
+        }
+        .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 1.25rem;
+        }
+        .mt-40 {
+            margin-top: 40px !important;
+        }
+        p.text-lg {
+            font-size: 2.1rem;
+            margin-bottom: 0;
+        }
+        p.text-md {
+            font-size: 1.9rem;
+            margin-bottom: 0;
+        }
+        .mt-100 {
+            margin-top: 100px !important;
+        }
+        .btn.btn-primary.fb a,
+        .btn.btn-primary.yt a {
+            color: #fff;
+        }
+        .btn.btn-primary.fb {
+            background: #3A559F;
+        }
+        .btn.btn-primary.yt {
+            background: #D01818;
+        }
+        .btn.btn-primary {
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+<!-- header -->
+<header class="fixed-top header">
+    <div class="top-header py-2 fabc-logo">
+        <a class="navbar-brand" href="index.html">First African Baptist Church</a>
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-4 text-center text-lg-left">
+                    <a href="" class="logo-mobile"><img src="images/fabc-joy-logo-up.png" alt=""></a>
+                </div>
+                <div class="col-lg-8 text-center text-lg-right">
+                    <ul class="list-inline">
+
+                        <li class="list-inline-item"><a
+                                class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#"
+                                data-toggle="modal" data-target="#calendarModal">Calendar</a></li>
+                        <li class="list-inline-item"><a
+                                class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#"
+                                data-toggle="modal" data-target="#chronicleModal">Sunday Chronicle</a></li>
+                        <li class="list-inline-item"><a
+                                class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#">Gallery</a>
+                        </li>
+                        <li class="list-inline-item"><a
+                                class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#"
+                                data-toggle="modal" data-target="#loginModal">login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar -->
+    <div class="navigation w-100">
+        <a class="navbar-brand-small" href="index.html"></a>
+        <div class="giving">
+            <a class="text-color" href="">Online Giving</a>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <!--<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>-->
+                <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+                        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navigation">
+                    <ul class="navbar-nav text-center ml-20">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="our-history.html">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="leadership.html">Leadership</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ministries.html">Ministries</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bookstore.html">Bookstore</a>
+                        </li>
+                    </ul>
+                    <a href="" class="online-giving-mobile">Online Giving</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<!-- /header -->
+<!-- hero slider -->
+<section class="hero-section overlay bg-cover" data-background="images/fabc-bg.jpg">
+    <div class="container container-small">
+        <div class="hero-slider">
+            <!-- slider item -->
+            <div class="hero-slider-item">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1 class="text-white" data-animation-out="fadeOut" data-delay-out="5"
+                            data-duration-in=".8" data-animation-in="fadeIn" data-delay-in=".1">First African
+                            Baptist Church Streaming on Facebook Live</h1>
+                        <p class="text-highlight text-lg" data-animation-out="fadeOut" data-delay-out="5"
+                           data-duration-in=".8" data-animation-in="fadeIn" data-delay-in=".4"></p>
+                        <a href="" class="btn btn-primary" data-animation-out="fadeOut"
+                           data-delay-out="5" data-duration-in=".8" data-animation-in="fadeIn" data-delay-in=".7">Facebook Livestream</a>
+                    </div>
+                </div>
+            </div>
+            <!-- slider item -->
+            <div class="hero-slider-item">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1 class="text-white" data-animation-out="fadeOut" data-delay-out="5"
+                            data-duration-in=".8" data-animation-in="fadeIn" data-delay-in=".1">First African
+                            Baptist Church Streaming on Youtube Live</h1>
+                        <p class="text-highlight text-md" data-animation-out="fadeOut" data-delay-out="5"
+                           data-duration-in=".8" data-animation-in="fadeIn" data-delay-in=".8"></p>
+                        <a href="" class="btn btn-primary" data-animation-out="fadeOut"
+                           data-delay-out="5" data-duration-in=".8" data-animation-in="fadeIn" data-delay-in=".7">Youtube Livestream</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-slider-item">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1 class="text-white" data-animation-out="fadeOut" data-delay-out="5"
+                            data-duration-in=".8" data-animation-in="fadeIn" data-delay-in=".1">Noon Day Prayer</h1>
+                        <p class="text-highlight text-md" data-animation-out="fadeOut" data-delay-out="5"
+                           data-duration-in=".5" data-animation-in="fadeIn" data-delay-in=".4">Monday March 30, 2020
+                            - 12:00 Noon</p>
+                        <p class="text-lg" data-animation-out="fadeOut" data-delay-out="5"
+                           data-duration-in=".5" data-animation-in="fadeIn" data-delay-in=".7">Dial 215.383.1625 Access Code: 526992</p>
+                        <!--<a href="" class="btn btn-primary" data-animation-out="fadeOutRight"
+                           data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Register
+                            Here</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<main>
+    <section>
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-xl-4 col-lg-5 inverted" style="background: #182b45;padding: 80px 30px 80px 70px;">
+                    <!-- .align-self-end-->
+                    <i class="ti-bookmark-alt text-primary feature-icon ti-large ti-inverted"></i>
+                    <h2>Sunday's Sermon</h2>
+                    <div class="h3 highlight block large">"I Can Only Be Me"</div>
+                    <div class="h4 mb-30">March 17, 2019</div>
+                    <div class="h3 highlight block large">Text</div>
+                    <div class="h5">Jeremiah 29:11 (KJV)</div>
+                    <div class="h5">Minister Kenneth Wilson, Associate Minister</div>
+                    <div class="content-block mt-100 mb-40">
+                        <h3>Streaming Links</h3>
+                        <div class="col-lg-8 btn btn-primary d-none d-sm-block mb-20 fb"><a href="">Stream via Facebook</a></div>
+                        <div class="col-lg-8 btn btn-primary d-none d-sm-block mb-20 yt"><a href="">Stream via Youtube</a></div>
+                        <!--<a href="" style="display: block; margin-bottom: 20px;"><img src="images/Facebook-Live-logo.png" alt="" style="max-height: 50px"></a>
+                        <a href="" style="display: block; margin-bottom: 20px;"><img src="images/Youtube-Live-logo.png" alt="" style="max-height: 50px"></a>-->
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-7">
+                    <div class="row feature-blocks bg-white justify-content-between">
+                        <div class="col-sm-6 col-xl-12 mb-xl-8 mb-lg-3 mb-4 text-center text-sm-left">
+                            <h1 class="mb-xl-4 mb-lg-3 mb-4">Joy!</h1>
+                            <p>We are very pleased that you decided to visit the website of First African Baptist Church
+                                of
+                                Sharon Hill, PA. First African is a family-oriented church for all of the Lord’s
+                                children
+                                regardless of race, color, creed, or circumstance.
+                                If you have never experienced the JOY! of First African, I sincerely ask you to join us
+                                for
+                                Sunday morning worship service. If you have visited previously and are looking for a
+                                church
+                                home, please accept an invitation to become part of our Christian fellowship on Sunday
+                                morning.</p>
+                        </div>
+
+                        <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left text-lg">
+                            <i class="ti-calendar text-primary mb-xl-4 mb-lg-3 mb-4 feature-icon ti-medium"></i>
+                            <h3 class="mb-xl-4 mb-lg-3 mb-4">Service Times</h3>
+                            <p><span class="highlight block">8:45 AM</span> Sunday School &amp; Discipleship Class</p>
+                            <p><span class="highlight block">9:45 AM</span> Morning Worship</p>
+                            <p><span class="highlight block">First Sunday</span> Holy Baptism, The Lord's Supper and The
+                                Right
+                                Hand
+                                of Fellowship for New </p>
+
+                        </div>
+                        <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left text-lg">
+                            <i class="ti-write text-primary feature-icon ti-medium"></i>
+                            <h3 class="mb-xl-4 mb-lg-3 mb-4">Event Registration</h3>
+                            <!--<p><a href="">Register for the Women's Retreat Here</a></p>
+                            <p><a href="">Register for the Women's Retreat Here</a></p>-->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container container-1200 text-center">
+            <div class="row mb-40">
+                <div class="col-lg-12">
+                    <h2>Ways You can Give<br>
+                        Tithes and Offerings</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <i class="ti-email text-primary ti-large"></i> <!--lti-location-pin-->
+                    <h3>Mail</h3>
+                    <p>First African Baptist Church<br>
+                        901 Clifton Avenue<br>
+                        Sharon Hill, PA 19079</p>
+                </div>
+                <div class="col-lg-4">
+                    <i class="ti-desktop text-primary ti-large"></i>
+                    <h3>Online</h3>
+                    <p><a href="">fabc-joy.org</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <i class="ti-mobile text-primary ti-large"></i>
+                    <h3>Text</h3>
+                    <p>text FABCSH to:<br>
+                        <span class="text-primary"><strong>73256</strong></span> </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-gray event-section">
+        <div class="container container-1200">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex align-items-center section-title justify-content-between">
+                        <h2 class="mb-0 text-nowrap mr-3">Upcoming Events</h2>
+                        <div class="border-top w-100 border-primary d-none d-sm-block"></div>
+                        <div>
+                            <a href="events.html" class="btn btn-primary ml-sm-3 d-none d-sm-block">See All News &
+                                Events</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-xl-6 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+                    <div class="card border-0 rounded-0 hover-shadow">
+                        <div class="flex align-center">
+                            <div class="card-date">15<br><span>Jan</span></div>
+                            <div class="card-body">
+                                <!-- location -->
+                                <div class="card-title">
+                                    Noon Day Prayer Service
+                                </div>
+                                <div class="details"><i class="ti-location-pin text-primary mr-2"></i>First African
+                                    Baptist
+                                    Church
+                                </div>
+                                <div class="details"><i class="ti-alarm-clock text-primary mr-2"></i>12:00pm - 1:00pm
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-6 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+                    <div class="card border-0 rounded-0 hover-shadow">
+                        <div class="flex align-center">
+                            <div class="card-date">15<br><span>Jan</span></div>
+                            <div class="card-body">
+                                <!-- location -->
+                                <div class="card-title">
+                                    Evening Prayer Service
+                                </div>
+                                <div class="details"><i class="ti-location-pin text-primary mr-2"></i>First African
+                                    Baptist
+                                    Church
+                                </div>
+                                <div class="details"><i class="ti-alarm-clock text-primary mr-2"></i>6:00pm - 7:00pm
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-6 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+                    <div class="card border-0 rounded-0 hover-shadow">
+                        <div class="flex align-center">
+                            <div class="card-date">15<br><span>Jan</span></div>
+                            <div class="card-body">
+                                <!-- location -->
+                                <div class="card-title">
+                                    Family Bible Study
+                                </div>
+                                <div class="details"><i class="ti-location-pin text-primary mr-2"></i>First African
+                                    Baptist
+                                    Church
+                                </div>
+                                <div class="details"><i class="ti-alarm-clock text-primary mr-2"></i>7:00pm - 8:00pm
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-6 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+                    <div class="card border-0 rounded-0 hover-shadow">
+                        <div class="flex align-center">
+                            <div class="card-date">15<br><span>Jan</span></div>
+                            <div class="card-body">
+                                <!-- location -->
+                                <div class="card-title">
+                                    Family Bible Study
+                                </div>
+                                <div class="details"><i class="ti-location-pin text-primary mr-2"></i>First African
+                                    Baptist
+                                    Church
+                                </div>
+                                <div class="details"><i class="ti-alarm-clock text-primary mr-2"></i>7:00pm - 8:00pm
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile see all button -->
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-lg">For Information regarding weekly events see our <a href="courses.html" class=" ">Church
+                        Bulletin</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex align-items-center section-title justify-content-between">
+                        <!--<h2 class="mb-0 text-nowrap mr-3">Our Course</h2>-->
+                        <div class="border-top w-100 border-primary d-none d-sm-block"></div>
+                        <!--<div>
+                          <a href="courses.html" class="btn btn-sm btn-primary-outline ml-sm-3 d-none d-sm-block">see all</a>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-4 mb-5">
+                    <div class="card p-0 border-primary rounded-0 hover-shadow">
+                        <img class="card-img-top rounded-0" src="images/bookstore.jpg" alt="course thumb">
+                        <div class="card-body">
+                            <a href="course-single.html">
+                                <h3 class="card-title">Reverend Dr. Richard A. Dent Library</h3>
+                            </a>
+                            <p class="card-text mb-4">Coming Soon</p>
+<!--                            <a href="" class="btn btn-primary btn-sm">Read More...</a>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-5">
+                    <div class="card p-0 border-primary rounded-0 hover-shadow">
+                        <img class="card-img-top rounded-0" src="images/bookstore.jpg" alt="course thumb">
+                        <div class="card-body">
+                            <a href="course-single.html">
+                                <h3 class="card-title">Youth Fellowship</h3>
+                            </a>
+                            <p class="card-text mb-4">Coming Soon</p>
+<!--                            <a href="" class="btn btn-primary btn-sm">Read More</a>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-5">
+                    <div class="card p-0 border-primary rounded-0 hover-shadow">
+                        <img class="card-img-top rounded-0" src="images/bw-watkins.jpg" alt="course thumb">
+                        <div class="card-body">
+                            <!--<ul class="list-inline mb-2">
+                              <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
+                              <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
+                            </ul>-->
+                            <a href="course-single.html">
+                                <h3 class="card-title">B.W. Watkins Scholarship Ministry</h3>
+                            </a>
+                            <p class="card-text mb-4">To provide financial assistance to college bound students who are members of First African Baptist Church.</p>
+                            <a href="b-w-watkins-scholarship-ministry.html" class="btn btn-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- footer -->
+<footer>
+    <!-- footer content -->
+    <div class="footer bg-footer section text-white">
+        <div class="footer-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-12 col-lg-10 footer-branding">
+                    <a class="logo-footer" href="index.html"><img class="img-fluid mb-4"
+                                                                  src="images/fabc-joy-logo-up.png"
+                                                                  alt="logo"></a>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-lg-3">
+                    <iframe width="340" height="300" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=901%20Clifton%20Avenue%20Sharon%20Hill%2C%20Pennsylvania%2019079&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <a href="https://www.embedgooglemap.net"></a></div>
+                <style>.mapouter {
+                    text-align: right;
+                    height: 300px;
+                    width: 340px;
+                }
+
+                .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 340px;
+                    width: 300px;
+                }</style>
+                <!--Google Maps by <a href="https://www.embedgooglemap.net" rel="nofollow" target="_blank">Embedgooglemap.net</a>-->
+
+                <div class="col-lg-4 inverted">
+                    <ul class="list-unstyled">
+                        <p>901 Clifton Avenue<br>
+                            Sharon Hill, Pennsylvania 19079<br>
+                            Phone: <a href="tel:6104610350">610.461.0350</a> or <a
+                                    href="tel:6104610352">610.461.0352</a><br>
+                            Office Fax: 610.461.4186<br>
+                            <a href="mailto:FABC-Joy@fabc.microsoftonline.com">FABC-Joy@fabc.microsoftonline.com</a></p>
+                    </ul>
+                </div>
+                <div class="col-lg-3 inverted">
+                    <ul class="list-unstyled text-right text-uppercase">
+                        <li><a href="">Leadership</a></li>
+                        <li><a href="">Ministries</a></li>
+                        <li><a href="">Word of Life Bookstore</a></li>
+                        <li><a href="">Our History</a></li>
+                        <li><a href="">Online Giving</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- copyright -->
+    <div class="copyright py-4 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7 text-sm-left text-center">
+                    <p class="mb-0">Copyright
+                        <script>
+                            var CurrentYear = new Date().getFullYear()
+                            document.write(CurrentYear)
+                        </script>
+                        © <a href="">First African Baptist Church</a></p>
+                    All Rights Reserved.
+                </div>
+                <div class="col-sm-5 text-sm-right text-center">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a class="d-inline-block p-2" href=""><i class="ti-facebook text-primary"></i></a></li>
+                        <!--<li class="list-inline-item"><a class="d-inline-block p-2"
+                                                        href="https://www.twitter.com/themefisher"><i
+                                class="ti-twitter-alt text-primary"></i></a></li>
+                        <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i
+                                class="ti-instagram text-primary"></i></a></li>
+                        <li class="list-inline-item"><a class="d-inline-block p-2"
+                                                        href="https://dribbble.com/themefisher"><i
+                                class="ti-dribbble text-primary"></i></a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Modal -->
+<div class="modal fade" id="calendarModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-100" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Calendar</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <embed src="documents/calendar.pdf" frameborder="0" width="100%">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="chronicleModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-100" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>First Sunday Chronicle</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <embed src="documents/chronicle.pdf" frameborder="0" width="100%">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="row">
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginName" name="loginName"
+                               placeholder="User Name">
+                    </div>
+                    <div class="col-12">
+                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword"
+                               placeholder="Password">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="kinlawModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Reverend Horace Kinlaw</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Reverend Horace Kinlaw is an Associate Minister of the historic First African Baptist Church in Darby
+                    Township, Pennsylvania where the Reverend Dr. Richard A Dent is the Pastor. In addition to his
+                    ministerial duties Reverend Kinlaw also serves in the following ministries: Sunday school, New
+                    Members Discipleship Class, Neighbor to Neighbor Community Development Corporation, Bible Study and
+                    the Youth Ministry.</p>
+                <p>Reverend Horace Kinlaw attended New Life Bible Institute Missionary Training School in Philadelphia,
+                    Pennsylvania.&nbsp; He received his license to preach in 2012 at Hopewell Baptist Church. He was
+                    ordained to preach in 2015 after completing ordination training from The Bethany Baptist Association
+                    School of Biblical Studies.&nbsp;</p>
+                <p>In his walk with Christ and due to his continued faithfulness, God appointed him with the
+                    responsibility of providing the spiritual oversight of the children and congregation at Ranch Hope,
+                    LeeAnn Bailey Memorial Chapel as their Pastor and Youth Pastor of Hopewell Baptist Church. Reverend
+                    Kinlaw loves the local church, and enjoys seeing people connect with God as well as in authentic
+                    relationships and community. His leadership and administrative gifts, love for preaching and
+                    teaching, and his heart for seeing people grow are his primary strengths in ministry.&nbsp; He has a
+                    great passion for young people and has a way of connecting with them to strive for the best.
+                    Reverend Kinlaw is also the founder of the Alpha J Omega Youth Organization for young men between
+                    the ages of 12-18, which is a mentoring program.</p>
+                <p>&nbsp;Reverend Kinlaw is married to Keisha and has two children: Raymond and Sanaiya. In his free
+                    time, he enjoys sports of all types and fellowships with those in the community. He is currently
+                    pursuing his Master’s Degree from Trinity Bible College and Seminary.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Modals -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+<script src="plugins/aos/aos.js"></script>
+<script src="plugins/venobox/venobox.min.js"></script>
+<script src="plugins/mixitup/mixitup.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+<script src="plugins/google-map/gmap.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
